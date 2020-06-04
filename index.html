@@ -4,3 +4,18 @@ Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/testkey
+
+
+
+  1)To create conection between already existing local and newly created remote repo
+    git remote add origin projectURL
+
+  2)set upstream to avoid using push origin xyz  always when on xyz branch.
+    git push --set-upstream origin xyz 
+      OR 
+    git -u origin xyz  
+
+  {% comment %} 3)to check difference between current branch and xyz branch
+    git diff xyz
+
+  4)PR (pull request):A request to have our code pulled into another branch. {% endcomment %}
